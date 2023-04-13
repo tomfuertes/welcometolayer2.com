@@ -1,6 +1,8 @@
 tmp
 .monitor.yaml
 src/playground*
+db.dump
+db.dump.zip
 
 # Node build artifacts
 node_modules
