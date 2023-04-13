@@ -1,0 +1,73 @@
+extends layout.pug
+
+block content
+  // banner 16
+  .banner-area.banner-16.pt--100.pb--120.pt_md--70.pt_sm--30.pb_md--90.pb_sm--50.bg-color--2
+    .container
+      .row
+        .col-lg-6.order-lg-1.order-md-2.order-sm-2.order-2
+          .left-banner-16-wrapepr.mt_md--100.mt_sm--100
+            h1.title
+              | Welcome to Layer 2
+              br
+              span welcometol2.eth
+            p.disc
+              | A compilation of web3 code and gifts from thisbetom.eth 💙
+            //- .button-group.d-flex.flex-wrap
+            //-   a.btn.btn-large.btn-primary.mr--30(href='#') Explore Now
+            //-   a.btn.btn-large.btn-primary-alta(href='#') Explore Now
+            .odometer-area-slide
+              .single-odometer
+                h3.counter
+                  span.odometer= `${count}`
+                  span.counter-label Welcome NFTs Sent
+              //- .single-odometer
+                h3.counter
+                  span.odometer= `$${parseFloat(cost.LRC).toFixed(2)}`
+                  span.counter-label LRC Fees Paid
+              //- .single-odometer
+                h3.counter
+                  span.odometer= `$${parseFloat(cost.ETH).toFixed(2)}`
+                  span.counter-label ETH Fees Paid
+              .single-odometer
+                h3.counter
+                  span.odometer= `${parseFloat(balance).toFixed(2)} LRC`
+                  span.counter-label Wallet Balance Remaining
+        .col-lg-6.order-lg-2.order-md-1.order-sm-1.order-1
+          .tilt-image-banner-16
+            img.tilt(src=gifts[0].src alt=gifts[0].name)
+            .joined-people-wrapper
+              p.disc
+                | Sends new accounts 2x of a random welcome NFT. Purchase all 3 by sending 10 LRC to
+                | welcometol2.eth on Loopring L2 - auto sends back before you can close the confirmation modal!
+
+
+  .rn-product-area.rn-section-gapTop
+    .container
+      .row.mb--50.align-items-center
+        .col-lg-12.col-md-12.col-sm-12.col-12
+          h3.title.mb--0 Welcome to L2 NFTs
+          p Buy all 3 (and fund future wallet sends) by sending 10 LRC to welcometol2.eth on Loopring L2 - the app auto responds and sends 2x of each NFT back in seconds!
+      .row.g-5
+        each gift of gifts
+          //- +log(gift)
+          // start single blog
+          .col-lg-4.col-md-6.col-12
+            .rn-blog
+              .inner
+                .thumbnail
+                  a(href=gift.href)
+                    img(src=gift.src, alt=gift.title, loading="lazy")
+                .content
+                  .category-info
+                    .category-list
+                      a(href=gift.href) Welcome to L2 NFT
+                    .meta
+                      span= gift.author
+                  h4.title
+                    a(href=gift.href)
+                      | #{gift.title}&nbsp;
+                      i.feather-arrow-up-right
+          // end single blog
+
+  include includes/_activity.pug

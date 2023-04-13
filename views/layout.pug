@@ -1,0 +1,94 @@
+doctype html
+
+mixin nftImg(ipfs)
+  img(src=ipfs.replace('ipfs://', 'https://loopring.mypinata.cloud/ipfs/'), loading="lazy")
+
+mixin nftImgFromMetadata(ipfs)
+  img(
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    data-meta=ipfs.replace('ipfs://', 'https://loopring.mypinata.cloud/ipfs/'), loading="lazy"
+  )
+
+mixin log(obj)
+  script
+    | console.log(!{JSON.stringify(obj)});
+
+- const cacheBuster = "__CACHEBUSTER__";
+
+// start header area
+head
+  meta(charset='utf-8')
+  meta(http-equiv='x-ua-compatible' content='ie=edge')
+  title Welcome to L2 💙 ThisBeTom.eth
+
+  // Global site tag (gtag.js) - Google Analytics
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-6B5HL6VHHK')
+  script.
+    if (!/localhost|herokuapp/.test(location.hostname)) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6B5HL6VHHK');
+    }
+
+  meta(name='robots' content='noindex, follow')
+  meta(name='description' content='')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='theme-style-mode' content='1')
+  // 0 == light, 1 == dark
+  // Favicon
+  link(rel='shortcut icon' type='image/x-icon' href='/static/favicon.png')
+  //
+    CSS
+    ============================================
+  link(rel='stylesheet' href=`/static/css/vendor/bootstrap.min.css`)
+  link(rel='stylesheet' href=`/static/css/vendor/slick.css`)
+  link(rel='stylesheet' href=`/static/css/vendor/slick-theme.css`)
+  link(rel='stylesheet' href=`/static/css/vendor/nice-select.css`)
+  link(rel='stylesheet' href=`/static/css/plugins/feature.css`)
+  link(rel='stylesheet' href=`/static/css/plugins/jquery-ui.min.css`)
+  link(rel='stylesheet' href=`/static/css/vendor/odometer.css`)
+  // Style css
+  link(rel='stylesheet' href=`/static/css/style.css?cb=${cacheBuster}`)
+
+body.template-color-1.nft-body-connect
+  // Start Header
+  include includes/_nav.pug
+  block content
+  include includes/_footer.pug
+  .mouse-cursor.cursor-outer
+  .mouse-cursor.cursor-inner
+  //- // Start Top To Bottom Area
+  //- .rn-progress-parent
+  //-   svg.rn-back-circle.svg-inner(width='100%' height='100%' viewbox='-1 -1 102 102')
+  //-     path(d='M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98')
+  // End Top To Bottom Area
+  // JS ============================================
+  script(src=`/static/js/vendor/jquery.js`)
+  script(src=`/static/js/vendor/jquery.nice-select.min.js`)
+  script(src=`/static/js/vendor/jquery-ui.js`)
+  script(src=`/static/js/vendor/modernizer.min.js`)
+  script(src=`/static/js/vendor/feather.min.js`)
+  script(src=`/static/js/vendor/slick.min.js`)
+  script(src=`/static/js/vendor/bootstrap.min.js`)
+  script(src=`/static/js/vendor/particles.js`)
+  script(src=`/static/js/vendor/jquery.style.swicher.js`)
+  script(src=`/static/js/vendor/js.cookie.js`)
+  script(src=`/static/js/vendor/count-down.js`)
+  script(src=`/static/js/vendor/isotop.js`)
+  script(src=`/static/js/vendor/imageloaded.js`)
+  //- script(src=`/static/js/vendor/backtoTop.js`)
+  //- script(src=`/static/js/vendor/odometer.js`)
+  script(src=`/static/js/vendor/jquery-appear.js`)
+  script(src=`/static/js/vendor/scrolltrigger.js`)
+  script(src=`/static/js/vendor/jquery.custom-file-input.js`)
+  script(src=`/static/js/vendor/savePopup.js`)
+  script(src=`/static/js/vendor/vanilla.tilt.js`)
+  script(src=`/static/js/vendor/spotlight.bundle.js`)
+  // main JS
+  script(src=`/static/js/main.js?cb=${cacheBuster}`)
+  script(src=`/static/js/tom.js?cb=${cacheBuster}`)
+  // Meta Mask
+  //- script(src=`/static/js/vendor/web3.min.js?cb=${cacheBuster}`)
+  //- script(src=`/static/js/vendor/maralis.js?cb=${cacheBuster}`)
+  //- script(src=`/static/js/vendor/nft.js?cb=${cacheBuster}`)

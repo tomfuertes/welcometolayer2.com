@@ -1,0 +1,51 @@
+header.rn-header.haeder-default.header--sticky
+  .container
+    .header-inner
+      .header-left
+        .logo-thumbnail.logo-custom-css
+          a.logo-light(href='/')
+            //- img(src='/images/logo/logo-white.png' alt='nft-logo')
+            strong WelcomeToL2.eth
+          a.logo-dark(href='/')
+            //- img(src='/images/logo/logo-dark.png' alt='nft-logo')
+            strong(style="color:#000") WelcomeToL2.eth
+        .mainmenu-wrapper
+          nav#sideNav.mainmenu-nav.d-none.d-xl-block
+            // Start Mainmanu Nav
+            ul.mainmenu
+              li
+                a(href='/blocks') Browse Recent Blocks
+            // End Mainmanu Nav
+      .header-right
+        .setting-option.mobile-menu-bar.d-block.d-xl-none
+          .hamberger
+            button.hamberger-button
+              i.feather-menu
+        #my_switcher.my_switcher.setting-option
+          ul
+            li
+              a.setColor.light(href='javascript: void(0);' data-theme='light')
+                img.sun-image(src='/images/icons/sun-01.svg' alt='Sun images')
+            li
+              a.setColor.dark(href='javascript: void(0);' data-theme='dark')
+                img.Victor.Image(src='/images/icons/vector.svg' alt='Vector Images')
+// End Header Area
+.popup-mobile-menu
+  .inner
+    .header-top
+      .logo.logo-custom-css
+        a.logo-light(href='/')
+            strong WelcomeToL2.eth
+        a.logo-dark(href='/')
+            strong WelcomeToL2.eth
+      .close-menu
+        button.close-button
+          i.feather-x
+    nav#mobile-nav
+      script
+        | document.getElementById('mobile-nav').appendChild(
+        |   document.querySelector('nav > ul.mainmenu').cloneNode(true)
+        | );
+
+      // End Mainmanu Nav
+// ENd Header Area

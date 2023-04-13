@@ -1,0 +1,421 @@
+// Start product area
+.rn-product-area.rn-section-gapTop
+  .container
+    .row.mb--50.align-items-center
+      .col-lg-6.col-md-6.col-sm-6.col-12
+        h3.title.mb--0(data-sal-delay='150' data-sal='slide-up' data-sal-duration='800') Explore Product
+      .col-lg-6.col-md-6.col-sm-6.col-12.mt_mobile--15
+        .view-more-btn.text-start.text-sm-end(data-sal-delay='150' data-sal='slide-up' data-sal-duration='800')
+          button.discover-filter-button.discover-filter-activation.btn.btn-primary
+            | Filter
+            i.feather-filter
+    .default-exp-wrapper.default-exp-expand
+      .inner
+        .filter-select-option
+          label.filter-leble LIKES
+          select
+            option(data-display='Most liked') Most liked
+            option(value='1') Least liked
+        .filter-select-option
+          label.filter-leble Category
+          select
+            option(data-display='Category') Category
+            option(value='1') Art
+            option(value='1') Photograph
+            option(value='2') Metaverses
+            option(value='4') Potato
+            option(value='4') Photos
+        .filter-select-option
+          label.filter-leble Collections
+          select
+            option(data-display='Collections') Collections
+            option(value='1') BoredApeYachtClub
+            option(value='2') MutantApeYachtClub
+            option(value='4') Art Blocks Factory
+        .filter-select-option
+          label.filter-leble Sale type
+          select
+            option(data-display='Sale type') Sale type
+            option(value='1') Fixed price
+            option(value='2') Timed auction
+            option(value='4') Not for sale
+            option(value='4') Open for offers
+        .filter-select-option
+          label.filter-leble Price Range
+          .price_filter.s-filter.clear
+            form(action='#' method='GET')
+              #slider-range
+              .slider__range--output
+                .price__output--wrap
+                  .price--output
+                    span Price :
+                    input#amount(type='text' readonly='')
+                  .price--filter
+                    a.btn.btn-primary.btn-small(href='#') Filter
+    .row.g-5
+      // start single product
+      .col-5.col-lg-4.col-md-6.col-sm-6.col-12(data-sal='slide-up' data-sal-delay='150' data-sal-duration='800')
+        .product-style-one.no-overlay
+          .card-thumbnail
+            a(href='product-details.html')
+              img(src='/images/portfolio/portfolio-01.jpg' alt='NFT_portfolio')
+          .product-share-wrapper
+            .profile-share
+              a.avatar(href='author.html' data-tooltip='Jone lee')
+                img(src='/images/client/client-1.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Jone lee')
+                img(src='/images/client/client-2.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Jone lee')
+                img(src='/images/client/client-3.png' alt='Nft_Profile')
+              a.more-author-text(href='#') 9+ Place Bit.
+            .share-btn.share-btn-activation.dropdown
+              button.icon(data-bs-toggle='dropdown' aria-expanded='false')
+                svg.sc-bdnxRM.sc-hKFxyN.hOiKLt(viewbox='0 0 14 4' fill='none' width='16' height='16')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z' fill='currentColor')
+              .share-btn-setting.dropdown-menu.dropdown-menu-end
+                button.btn-setting-text.share-text(type='button' data-bs-toggle='modal' data-bs-target='#shareModal')
+                  | Share
+                button.btn-setting-text.report-text(type='button' data-bs-toggle='modal' data-bs-target='#reportModal')
+                  | Report
+          a(href='product-details.html')
+            span.product-name Preatent
+          span.latest-bid Highest bid 1/20
+          .bid-react-area
+            .last-bid 0.244wETH
+            .react-area
+              svg.sc-bdnxRM.sc-hKFxyN.kBvkOu(viewbox='0 0 17 16' fill='none' width='16' height='16')
+                path(d='M8.2112 14L12.1056 9.69231L14.1853 7.39185C15.2497 6.21455 15.3683 4.46116 14.4723 3.15121V3.15121C13.3207 1.46757 10.9637 1.15351 9.41139 2.47685L8.2112 3.5L6.95566 2.42966C5.40738 1.10976 3.06841 1.3603 1.83482 2.97819V2.97819C0.777858 4.36443 0.885104 6.31329 2.08779 7.57518L8.2112 14Z' stroke='currentColor' stroke-width='2')
+              span.number 322
+      // end single product
+      // start single product
+      .col-5.col-lg-4.col-md-6.col-sm-6.col-12(data-sal='slide-up' data-sal-delay='200' data-sal-duration='800')
+        .product-style-one.no-overlay
+          .card-thumbnail
+            a(href='product-details.html')
+              img(src='/images/portfolio/portfolio-02.jpg' alt='NFT_portfolio')
+          .product-share-wrapper
+            .profile-share
+              a.avatar(href='author.html' data-tooltip='mr. Davei')
+                img(src='/images/client/client-4.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Mrs.Laumi')
+                img(src='/images/client/client-5.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Shanon')
+                img(src='/images/client/client-6.png' alt='Nft_Profile')
+              a.more-author-text(href='#') 11+ Place Bit.
+            .share-btn.share-btn-activation.dropdown
+              button.icon(data-bs-toggle='dropdown' aria-expanded='false')
+                svg.sc-bdnxRM.sc-hKFxyN.hOiKLt(viewbox='0 0 14 4' fill='none' width='16' height='16')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z' fill='currentColor')
+              .share-btn-setting.dropdown-menu.dropdown-menu-end
+                button.btn-setting-text.share-text(type='button' data-bs-toggle='modal' data-bs-target='#shareModal')
+                  | Share
+                button.btn-setting-text.report-text(type='button' data-bs-toggle='modal' data-bs-target='#reportModal')
+                  | Report
+          a(href='product-details.html')
+            span.product-name Diamond Dog
+          span.latest-bid Highest bid 5/11
+          .bid-react-area
+            .last-bid 0.892wETH
+            .react-area
+              svg.sc-bdnxRM.sc-hKFxyN.kBvkOu(viewbox='0 0 17 16' fill='none' width='16' height='16')
+                path(d='M8.2112 14L12.1056 9.69231L14.1853 7.39185C15.2497 6.21455 15.3683 4.46116 14.4723 3.15121V3.15121C13.3207 1.46757 10.9637 1.15351 9.41139 2.47685L8.2112 3.5L6.95566 2.42966C5.40738 1.10976 3.06841 1.3603 1.83482 2.97819V2.97819C0.777858 4.36443 0.885104 6.31329 2.08779 7.57518L8.2112 14Z' stroke='currentColor' stroke-width='2')
+              span.number 420
+      // end single product
+      // start single product
+      .col-5.col-lg-4.col-md-6.col-sm-6.col-12(data-sal='slide-up' data-sal-delay='250' data-sal-duration='800')
+        .product-style-one.no-overlay
+          .card-thumbnail
+            a(href='product-details.html')
+              img(src='/images/portfolio/portfolio-03.jpg' alt='NFT_portfolio')
+          .product-share-wrapper
+            .profile-share
+              a.avatar(href='author.html' data-tooltip='mr. Jone')
+                img(src='/images/client/client-7.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Laumi')
+                img(src='/images/client/client-8.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Tom')
+                img(src='/images/client/client-9.png' alt='Nft_Profile')
+              a.more-author-text(href='#') 12+ Place Bit.
+            .share-btn.share-btn-activation.dropdown
+              button.icon(data-bs-toggle='dropdown' aria-expanded='false')
+                svg.sc-bdnxRM.sc-hKFxyN.hOiKLt(viewbox='0 0 14 4' fill='none' width='16' height='16')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z' fill='currentColor')
+              .share-btn-setting.dropdown-menu.dropdown-menu-end
+                button.btn-setting-text.share-text(type='button' data-bs-toggle='modal' data-bs-target='#shareModal')
+                  | Share
+                button.btn-setting-text.report-text(type='button' data-bs-toggle='modal' data-bs-target='#reportModal')
+                  | Report
+          a(href='product-details.html')
+            span.product-name OrBid6
+          span.latest-bid Highest bid 2/31
+          .bid-react-area
+            .last-bid 0.2128wETH
+            .react-area
+              svg.sc-bdnxRM.sc-hKFxyN.kBvkOu(viewbox='0 0 17 16' fill='none' width='16' height='16')
+                path(d='M8.2112 14L12.1056 9.69231L14.1853 7.39185C15.2497 6.21455 15.3683 4.46116 14.4723 3.15121V3.15121C13.3207 1.46757 10.9637 1.15351 9.41139 2.47685L8.2112 3.5L6.95566 2.42966C5.40738 1.10976 3.06841 1.3603 1.83482 2.97819V2.97819C0.777858 4.36443 0.885104 6.31329 2.08779 7.57518L8.2112 14Z' stroke='currentColor' stroke-width='2')
+              span.number 12
+      // end single product
+      // start single product
+      .col-5.col-lg-4.col-md-6.col-sm-6.col-12(data-sal='slide-up' data-sal-delay='300' data-sal-duration='800')
+        .product-style-one.no-overlay
+          .card-thumbnail
+            a(href='product-details.html')
+              img(src='/images/portfolio/portfolio-04.jpg' alt='NFT_portfolio')
+            .countdown(data-date='2022-11-09')
+              .countdown-container.days
+                span.countdown-value 87
+                span.countdown-heading D&apos;s
+              .countdown-container.hours
+                span.countdown-value 23
+                span.countdown-heading H&apos;s
+              .countdown-container.minutes
+                span.countdown-value 38
+                span.countdown-heading Min&apos;s
+              .countdown-container.seconds
+                span.countdown-value 27
+                span.countdown-heading Sec
+          .product-share-wrapper
+            .profile-share
+              a.avatar(href='author.html' data-tooltip='mr. Davei')
+                img(src='/images/client/client-9.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Mrs.Laumi')
+                img(src='/images/client/client-10.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Shanon')
+                img(src='/images/client/client-11.png' alt='Nft_Profile')
+              a.more-author-text(href='#') 13+ Place Bit.
+            .share-btn.share-btn-activation.dropdown
+              button.icon(data-bs-toggle='dropdown' aria-expanded='false')
+                svg.sc-bdnxRM.sc-hKFxyN.hOiKLt(viewbox='0 0 14 4' fill='none' width='16' height='16')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z' fill='currentColor')
+              .share-btn-setting.dropdown-menu.dropdown-menu-end
+                button.btn-setting-text.share-text(type='button' data-bs-toggle='modal' data-bs-target='#shareModal')
+                  | Share
+                button.btn-setting-text.report-text(type='button' data-bs-toggle='modal' data-bs-target='#reportModal')
+                  | Report
+          a(href='product-details.html')
+            span.product-name Morgan11
+          span.latest-bid Highest bid 3/16
+          .bid-react-area
+            .last-bid 0.265wETH
+            .react-area
+              svg.sc-bdnxRM.sc-hKFxyN.kBvkOu(viewbox='0 0 17 16' fill='none' width='16' height='16')
+                path(d='M8.2112 14L12.1056 9.69231L14.1853 7.39185C15.2497 6.21455 15.3683 4.46116 14.4723 3.15121V3.15121C13.3207 1.46757 10.9637 1.15351 9.41139 2.47685L8.2112 3.5L6.95566 2.42966C5.40738 1.10976 3.06841 1.3603 1.83482 2.97819V2.97819C0.777858 4.36443 0.885104 6.31329 2.08779 7.57518L8.2112 14Z' stroke='currentColor' stroke-width='2')
+              span.number 20
+      // end single product
+      // start single product
+      .col-5.col-lg-4.col-md-6.col-sm-6.col-12(data-sal='slide-up' data-sal-delay='350' data-sal-duration='800')
+        .product-style-one.no-overlay
+          .card-thumbnail
+            a(href='product-details.html')
+              img(src='/images/portfolio/portfolio-05.jpg' alt='NFT_portfolio')
+          .product-share-wrapper
+            .profile-share
+              a.avatar(href='author.html' data-tooltip='Terasa')
+                img(src='/images/client/client-8.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Sakib')
+                img(src='/images/client/client-7.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Miraj')
+                img(src='/images/client/client-3.png' alt='Nft_Profile')
+              a.more-author-text(href='#') 15+ Place Bit.
+            .share-btn.share-btn-activation.dropdown
+              button.icon(data-bs-toggle='dropdown' aria-expanded='false')
+                svg.sc-bdnxRM.sc-hKFxyN.hOiKLt(viewbox='0 0 14 4' fill='none' width='16' height='16')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z' fill='currentColor')
+              .share-btn-setting.dropdown-menu.dropdown-menu-end
+                button.btn-setting-text.share-text(type='button' data-bs-toggle='modal' data-bs-target='#shareModal')
+                  | Share
+                button.btn-setting-text.report-text(type='button' data-bs-toggle='modal' data-bs-target='#reportModal')
+                  | Report
+          a(href='product-details.html')
+            span.product-name mAtal8
+          span.latest-bid Highest bid 6/50
+          .bid-react-area
+            .last-bid 0.244wETH
+            .react-area
+              svg.sc-bdnxRM.sc-hKFxyN.kBvkOu(viewbox='0 0 17 16' fill='none' width='16' height='16')
+                path(d='M8.2112 14L12.1056 9.69231L14.1853 7.39185C15.2497 6.21455 15.3683 4.46116 14.4723 3.15121V3.15121C13.3207 1.46757 10.9637 1.15351 9.41139 2.47685L8.2112 3.5L6.95566 2.42966C5.40738 1.10976 3.06841 1.3603 1.83482 2.97819V2.97819C0.777858 4.36443 0.885104 6.31329 2.08779 7.57518L8.2112 14Z' stroke='currentColor' stroke-width='2')
+              span.number 205
+      // end single product
+      // start single product
+      .col-5.col-lg-4.col-md-6.col-sm-6.col-12(data-sal='slide-up' data-sal-delay='400' data-sal-duration='800')
+        .product-style-one.no-overlay
+          .card-thumbnail
+            a(href='product-details.html')
+              img(src='/images/portfolio/portfolio-06.jpg' alt='NFT_portfolio')
+          .product-share-wrapper
+            .profile-share
+              a.avatar(href='author.html' data-tooltip='Moris')
+                img(src='/images/client/client-8.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Jsufia')
+                img(src='/images/client/client-1.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Mordan')
+                img(src='/images/client/client-2.png' alt='Nft_Profile')
+              a.more-author-text(href='#') 9+ Place Bit.
+            .share-btn.share-btn-activation.dropdown
+              button.icon(data-bs-toggle='dropdown' aria-expanded='false')
+                svg.sc-bdnxRM.sc-hKFxyN.hOiKLt(viewbox='0 0 14 4' fill='none' width='16' height='16')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z' fill='currentColor')
+              .share-btn-setting.dropdown-menu.dropdown-menu-end
+                button.btn-setting-text.share-text(type='button' data-bs-toggle='modal' data-bs-target='#shareModal')
+                  | Share
+                button.btn-setting-text.report-text(type='button' data-bs-toggle='modal' data-bs-target='#reportModal')
+                  | Report
+          a(href='product-details.html')
+            span.product-name Platonum
+          span.latest-bid Highest bid 1/10
+          .bid-react-area
+            .last-bid 0.450wETH
+            .react-area
+              svg.sc-bdnxRM.sc-hKFxyN.kBvkOu(viewbox='0 0 17 16' fill='none' width='16' height='16')
+                path(d='M8.2112 14L12.1056 9.69231L14.1853 7.39185C15.2497 6.21455 15.3683 4.46116 14.4723 3.15121V3.15121C13.3207 1.46757 10.9637 1.15351 9.41139 2.47685L8.2112 3.5L6.95566 2.42966C5.40738 1.10976 3.06841 1.3603 1.83482 2.97819V2.97819C0.777858 4.36443 0.885104 6.31329 2.08779 7.57518L8.2112 14Z' stroke='currentColor' stroke-width='2')
+              span.number 65
+      // end single product
+      // start single product
+      .col-5.col-lg-4.col-md-6.col-sm-6.col-12(data-sal='slide-up' data-sal-delay='450' data-sal-duration='800')
+        .product-style-one.no-overlay
+          .card-thumbnail
+            a(href='product-details.html')
+              img(src='/images/portfolio/portfolio-07.jpg' alt='NFT_portfolio')
+            .countdown(data-date='2022-12-09')
+              .countdown-container.days
+                span.countdown-value 35
+                span.countdown-heading D&apos;s
+              .countdown-container.hours
+                span.countdown-value 42
+                span.countdown-heading H&apos;s
+              .countdown-container.minutes
+                span.countdown-value 10
+                span.countdown-heading Min&apos;s
+              .countdown-container.seconds
+                span.countdown-value 23
+                span.countdown-heading Sec
+          .product-share-wrapper
+            .profile-share
+              a.avatar(href='author.html' data-tooltip='Thinm')
+                img(src='/images/client/client-6.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Jubin')
+                img(src='/images/client/client-10.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Nautial')
+                img(src='/images/client/client-1.png' alt='Nft_Profile')
+              a.more-author-text(href='#') 14+ Place Bit.
+            .share-btn.share-btn-activation.dropdown
+              button.icon(data-bs-toggle='dropdown' aria-expanded='false')
+                svg.sc-bdnxRM.sc-hKFxyN.hOiKLt(viewbox='0 0 14 4' fill='none' width='16' height='16')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z' fill='currentColor')
+              .share-btn-setting.dropdown-menu.dropdown-menu-end
+                button.btn-setting-text.share-text(type='button' data-bs-toggle='modal' data-bs-target='#shareModal')
+                  | Share
+                button.btn-setting-text.report-text(type='button' data-bs-toggle='modal' data-bs-target='#reportModal')
+                  | Report
+          a(href='product-details.html')
+            span.product-name PlatOrgan
+          span.latest-bid Highest bid 2/22
+          .bid-react-area
+            .last-bid 0.311wETH
+            .react-area
+              svg.sc-bdnxRM.sc-hKFxyN.kBvkOu(viewbox='0 0 17 16' fill='none' width='16' height='16')
+                path(d='M8.2112 14L12.1056 9.69231L14.1853 7.39185C15.2497 6.21455 15.3683 4.46116 14.4723 3.15121V3.15121C13.3207 1.46757 10.9637 1.15351 9.41139 2.47685L8.2112 3.5L6.95566 2.42966C5.40738 1.10976 3.06841 1.3603 1.83482 2.97819V2.97819C0.777858 4.36443 0.885104 6.31329 2.08779 7.57518L8.2112 14Z' stroke='currentColor' stroke-width='2')
+              span.number 56
+      // end single product
+      // start single product
+      .col-5.col-lg-4.col-md-6.col-sm-6.col-12(data-sal='slide-up' data-sal-delay='500' data-sal-duration='800')
+        .product-style-one.no-overlay
+          .card-thumbnail
+            a(href='product-details.html')
+              img(src='/images/portfolio/portfolio-10.jpg' alt='NFT_portfolio')
+          .product-share-wrapper
+            .profile-share
+              a.avatar(href='author.html' data-tooltip='Tabriz')
+                img(src='/images/client/client-6.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Juskin')
+                img(src='/images/client/client-8.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Money')
+                img(src='/images/client/client-9.png' alt='Nft_Profile')
+              a.more-author-text(href='#') 14+ Place Bit.
+            .share-btn.share-btn-activation.dropdown
+              button.icon(data-bs-toggle='dropdown' aria-expanded='false')
+                svg.sc-bdnxRM.sc-hKFxyN.hOiKLt(viewbox='0 0 14 4' fill='none' width='16' height='16')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z' fill='currentColor')
+              .share-btn-setting.dropdown-menu.dropdown-menu-end
+                button.btn-setting-text.share-text(type='button' data-bs-toggle='modal' data-bs-target='#shareModal')
+                  | Share
+                button.btn-setting-text.report-text(type='button' data-bs-toggle='modal' data-bs-target='#reportModal')
+                  | Report
+          a(href='product-details.html')
+            span.product-name Orgajis
+          span.latest-bid Highest bid 2/10
+          .bid-react-area
+            .last-bid 0.244wETH
+            .react-area
+              svg.sc-bdnxRM.sc-hKFxyN.kBvkOu(viewbox='0 0 17 16' fill='none' width='16' height='16')
+                path(d='M8.2112 14L12.1056 9.69231L14.1853 7.39185C15.2497 6.21455 15.3683 4.46116 14.4723 3.15121V3.15121C13.3207 1.46757 10.9637 1.15351 9.41139 2.47685L8.2112 3.5L6.95566 2.42966C5.40738 1.10976 3.06841 1.3603 1.83482 2.97819V2.97819C0.777858 4.36443 0.885104 6.31329 2.08779 7.57518L8.2112 14Z' stroke='currentColor' stroke-width='2')
+              span.number 89
+      // end single product
+      // start single product
+      .col-5.col-lg-4.col-md-6.col-sm-6.col-12(data-sal='slide-up' data-sal-delay='550' data-sal-duration='800')
+        .product-style-one.no-overlay
+          .card-thumbnail
+            a(href='product-details.html')
+              img(src='/images/portfolio/portfolio-09.jpg' alt='NFT_portfolio')
+          .product-share-wrapper
+            .profile-share
+              a.avatar(href='author.html' data-tooltip='Morokko')
+                img(src='/images/client/client-6.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Levnon')
+                img(src='/images/client/client-1.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Trim sawdi')
+                img(src='/images/client/client-10.png' alt='Nft_Profile')
+              a.more-author-text(href='#') 12+ Place Bit.
+            .share-btn.share-btn-activation.dropdown
+              button.icon(data-bs-toggle='dropdown' aria-expanded='false')
+                svg.sc-bdnxRM.sc-hKFxyN.hOiKLt(viewbox='0 0 14 4' fill='none' width='16' height='16')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z' fill='currentColor')
+              .share-btn-setting.dropdown-menu.dropdown-menu-end
+                button.btn-setting-text.share-text(type='button' data-bs-toggle='modal' data-bs-target='#shareModal')
+                  | Share
+                button.btn-setting-text.report-text(type='button' data-bs-toggle='modal' data-bs-target='#reportModal')
+                  | Report
+          a(href='product-details.html')
+            span.product-name #720
+          span.latest-bid Highest bid 1/1
+          .bid-react-area
+            .last-bid 0.244wETH
+            .react-area
+              svg.sc-bdnxRM.sc-hKFxyN.kBvkOu(viewbox='0 0 17 16' fill='none' width='16' height='16')
+                path(d='M8.2112 14L12.1056 9.69231L14.1853 7.39185C15.2497 6.21455 15.3683 4.46116 14.4723 3.15121V3.15121C13.3207 1.46757 10.9637 1.15351 9.41139 2.47685L8.2112 3.5L6.95566 2.42966C5.40738 1.10976 3.06841 1.3603 1.83482 2.97819V2.97819C0.777858 4.36443 0.885104 6.31329 2.08779 7.57518L8.2112 14Z' stroke='currentColor' stroke-width='2')
+              span.number 502
+      // start single product
+      .col-5.col-lg-4.col-md-6.col-sm-6.col-12(data-sal='slide-up' data-sal-delay='600' data-sal-duration='800')
+        .product-style-one.no-overlay
+          .card-thumbnail
+            a(href='product-details.html')
+              img(src='/images/portfolio/portfolio-11.jpg' alt='NFT_portfolio')
+          .product-share-wrapper
+            .profile-share
+              a.avatar(href='author.html' data-tooltip='Mark David')
+                img(src='/images/client/client-1.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Sunil Satti')
+                img(src='/images/client/client-8.png' alt='Nft_Profile')
+              a.avatar(href='author.html' data-tooltip='Jone lee')
+                img(src='/images/client/client-7.png' alt='Nft_Profile')
+              a.more-author-text(href='#') 5+ Place Bit.
+            .share-btn.share-btn-activation.dropdown
+              button.icon(data-bs-toggle='dropdown' aria-expanded='false')
+                svg.sc-bdnxRM.sc-hKFxyN.hOiKLt(viewbox='0 0 14 4' fill='none' width='16' height='16')
+                  path(fill-rule='evenodd' clip-rule='evenodd' d='M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z' fill='currentColor')
+              .share-btn-setting.dropdown-menu.dropdown-menu-end
+                button.btn-setting-text.share-text(type='button' data-bs-toggle='modal' data-bs-target='#shareModal')
+                  | Share
+                button.btn-setting-text.report-text(type='button' data-bs-toggle='modal' data-bs-target='#reportModal')
+                  | Report
+          a(href='product-details.html')
+            span.product-name Orthogon#720
+          span.latest-bid Highest bid 1/1
+          .bid-react-area
+            .last-bid 0.244wETH
+            .react-area
+              svg.sc-bdnxRM.sc-hKFxyN.kBvkOu(viewbox='0 0 17 16' fill='none' width='16' height='16')
+                path(d='M8.2112 14L12.1056 9.69231L14.1853 7.39185C15.2497 6.21455 15.3683 4.46116 14.4723 3.15121V3.15121C13.3207 1.46757 10.9637 1.15351 9.41139 2.47685L8.2112 3.5L6.95566 2.42966C5.40738 1.10976 3.06841 1.3603 1.83482 2.97819V2.97819C0.777858 4.36443 0.885104 6.31329 2.08779 7.57518L8.2112 14Z' stroke='currentColor' stroke-width='2')
+              span.number 308
+      // end single product
+// end product area

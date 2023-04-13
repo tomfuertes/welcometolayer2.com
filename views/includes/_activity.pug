@@ -1,0 +1,34 @@
+.rn-activity-area.rn-section-gapTop
+  .container
+    .row.mb--30
+      h3.title Recent Sending Activity
+    .row.g-6.mb_dec--15
+      each t of sends
+        //- +log(t)
+        // single activity
+        .col-xl-3.col-lg-4.col-sm-6.text-center
+          .single-activity-wrapper
+            .inner
+              .read-content
+                //- .thumbnail
+                //-   a(href='product-details.html')
+                //-     img(src='/images/activity/activity-01.jpg', alt='Nft_Profile')
+                .content(style="margin-left: 0px")
+                  a(href=`https://explorer.loopring.io/account/${t.payeeId}`)
+                    h6.title= [t.payeeAddress.substr(0,7),t.payeeAddress.substr(t.payeeAddress.length-7)].join('...')
+                    //- h7.title= t.payeeAddress
+
+                  p.small(style="font-size: .875em")
+                    | 2x NFTs sent for&nbsp;
+                    span= `${t.feeAmount} ${t.feeTokenSymbol}`
+                    |  fee
+                  .time-maintane.small
+                    .time.data
+                      i(data-feather='clock')
+                      span= t.createdAt
+                    .user-area.data
+                      i(data-feather='cloud')
+                      span= t.status
+              //- .icone-area
+                i(data-feather='message-circle')
+          // single activity
