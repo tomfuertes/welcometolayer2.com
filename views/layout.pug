@@ -1,12 +1,12 @@
 doctype html
 
 mixin nftImg(ipfs)
-  img(src=ipfs.replace('ipfs://', 'https://loopring.mypinata.cloud/ipfs/'), loading="lazy")
+  img(src=ipfs.replace('ipfs://', 'https://cloudflare-ipfs.com/ipfs/'), loading="lazy")
 
 mixin nftImgFromMetadata(ipfs)
   img(
     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-    data-meta=ipfs.replace('ipfs://', 'https://loopring.mypinata.cloud/ipfs/'), loading="lazy"
+    data-meta=ipfs.replace('ipfs://', 'https://cloudflare-ipfs.com/ipfs/'), loading="lazy"
   )
 
 mixin log(obj)

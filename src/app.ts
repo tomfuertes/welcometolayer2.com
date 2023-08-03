@@ -75,19 +75,19 @@ const getData = async () => {
     {
       href: "https://explorer.loopring.io/nft/0xb6a1df588d2cb521030a5269d42a9c34f1ecaeab-0-0x92f7c57650b6dae91b8a8d73b1fb90f70b39358e-0x32f006a901505c8c015714cc4390f7f5447c1b07983b050c9cd92da90777584c-10",
       title: "Welcome to L2",
-      src: "https://loopring.mypinata.cloud/ipfs/QmTfNgyzsH6KhbFbawhNks1Xwm1pkh6ofMiXTfFYrupCXL",
+      src: "https://cloudflare-ipfs.com/ipfs/QmTfNgyzsH6KhbFbawhNks1Xwm1pkh6ofMiXTfFYrupCXL",
       author: "@ThisBeTom",
     },
     {
       href: "https://explorer.loopring.io/nft/0xcc954a62b34c284a93ffeae837e4e1717f026126-0-0xe47f82c110a12166a0c714f782227c1bfbfe1c44-0x77f3e47c1a2f92bfca6a1c351a22aceda60f700834191e16ee3be110579aff4c-10",
       title: "Welcome To Layer 2",
-      src: "https://loopring.mypinata.cloud/ipfs/QmUsz8HfqKvfDN3pX9byYftJQbgtL586Z5CChTnvsUgB4E",
+      src: "https://cloudflare-ipfs.com/ipfs/QmUsz8HfqKvfDN3pX9byYftJQbgtL586Z5CChTnvsUgB4E",
       author: "@0xLoopDaddy",
     },
     {
       href: "https://explorer.loopring.io/nft/0x8d0b24f4c4eb9b0b450cfce37e1b842d3005c1d8-0-0x9d226054324360d8eeb024f66731d6c5e44e8c6f-0xb8791b6b22347bada9ea62cd8a94ce073a9ef57702f12c343f2c3a003b472465-10",
       title: "Loopring Tracer",
-      src: "https://loopring.mypinata.cloud/ipfs/QmYcokxgqztYfq1hQ3GoQ89grEJq46z2Mr6Trw4F8XB4d6",
+      src: "https://cloudflare-ipfs.com/ipfs/QmYcokxgqztYfq1hQ3GoQ89grEJq46z2Mr6Trw4F8XB4d6",
       author: "@itsgboccia",
     },
   ];

@@ -1,6 +1,6 @@
 /*global $, fetch, console*/
 
-const endpoint = "https://loopring.mypinata.cloud/ipfs/";
+const endpoint = "https://cloudflare-ipfs.com/ipfs/";
 const cleanUrl = (url) => {
   if (url.startsWith("ipfs://")) {
     return url
