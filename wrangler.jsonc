@@ -1,13 +1,18 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "welcometolayer2-com",
+  "main": "worker/index.js",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./public",
-    "not_found_handling": "404-page"
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": true
   },
   "routes": [
+    { "pattern": "www.welcometolayer2.com", "custom_domain": true },
     { "pattern": "welcometolayer2.com", "custom_domain": true },
-    { "pattern": "www.welcometolayer2.com", "custom_domain": true }
+    { "pattern": "welcometol2.com", "custom_domain": true },
+    { "pattern": "www.welcometol2.com", "custom_domain": true }
   ]
 }
